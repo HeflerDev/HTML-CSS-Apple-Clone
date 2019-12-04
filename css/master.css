@@ -47,6 +47,23 @@ nav .vl {
   padding-left: 0;
 }
 
+header nav div {
+  width: 100%;
+}
+
+header nav > div:hover {
+  background: rgb(210, 210, 242);
+  background:
+    linear-gradient(
+      0deg,
+      rgba(170, 170, 202, 1) 0%,
+      rgba(181, 170, 144, 1) 51%,
+      rgba(131, 103, 104, 1) 57%,
+      rgba(84, 54, 54, 1) 100%
+    );
+  color: white;
+}
+
 header nav button,
 .search-icon-container {
   width: 100%;
@@ -104,7 +121,7 @@ header nav .search-icon-container .input-container {
   box-shadow: 0 2px 1px rgb(56, 56, 56) inset;
 }
 
-button .img {
+div .img {
   width: 100%;
   height: 100%;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg");
@@ -113,7 +130,7 @@ button .img {
   background-repeat: no-repeat;
 }
 
-button .img:hover {
+div .img:hover {
   filter: invert(100%);
 }
 
