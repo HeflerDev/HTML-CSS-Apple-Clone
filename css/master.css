@@ -173,3 +173,40 @@ aside {
   flex-direction: row;
   justify-content: space-around;
 }
+
+footer {
+  font-size: 10px;
+  display: block;
+  color: #6e6e6e;
+}
+
+footer a {
+  color: #08c;
+  text-decoration: none;
+}
+
+footer .footer-top-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-elements-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-right-elements-bottom {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .footer-bottom-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: auto 85px 20px;
+  width: 50%;
+}
