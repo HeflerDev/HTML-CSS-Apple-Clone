@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url("https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  width: 85%;
+  height: 50px;
+  margin: 100px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 0 0 4px black;
+  background: rgb(210, 210, 242);
+  background:
+    linear-gradient(
+      0deg,
+      rgba(210, 210, 242, 1) 0%,
+      rgba(221, 210, 184, 1) 51%,
+      rgba(171, 153, 144, 1) 57%,
+      rgba(124, 94, 94, 1) 100%
+    );
+}
+
+.vl {
+  border-left: 1px solid lightgray;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+nav .vl {
+  border-left: 1px solid rgb(98, 98, 98);
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header nav button,
+.search-icon-container {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+header nav button:hover {
+  background: rgb(210, 210, 242);
+  background:
+    linear-gradient(
+      0deg,
+      rgba(170, 170, 202, 1) 0%,
+      rgba(181, 170, 144, 1) 51%,
+      rgba(131, 103, 104, 1) 57%,
+      rgba(84, 54, 54, 1) 100%
+    );
+  color: white;
+}
+
+.footer-elements-container span,
+a,
+img {
+  margin: 10px auto;
+}
+
+aside img {
+  height: 200px;
+  width: 364px;
+}
+
+nav button img:hover {
+  filter: invert();
+}
+
+header nav .first-button {
+  border-radius: 4px 0 0 4px;
+}
+
+header nav .search-icon-container {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid rgb(98, 98, 98);
+}
+
+header nav .search-icon-container .input-container {
+  display: flex;
+  width: 80%;
+  height: 50%;
+  margin: 10% auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 1px rgb(56, 56, 56) inset;
+}
+
+button .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg");
+  background-position: center;
+  background-size: 20%;
+  background-repeat: no-repeat;
+}
+
+button .img:hover {
+  filter: invert(100%);
+}
+
+header nav input {
+  width: 60%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header nav .input-container img {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  filter: invert(100%);
+}
+
+header .main-text {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: BioRhyme, cursive;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .main-text .first-line {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 0;
+  font-family: Iconochive, sans-serif;
+  margin-bottom: 20px;
+}
+
+header .main-text .second-line {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Iconochive, monospace;
+  margin-bottom: 20px;
+}
+
+header .main-text .third-line {
+  font-size: 24px;
+  font-family: Iconochive, cursive;
+}
+
+aside {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
