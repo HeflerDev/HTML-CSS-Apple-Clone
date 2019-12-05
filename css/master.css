@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Iconochive-Regular";
+  src: url("https://archive.org/includes/fonts/Iconochive-Regular.eot?-ccsheb");
+  src:
+    url("https://archive.org/includes/fonts/Iconochive-Regular.eot?#iefix-ccsheb")
+    format("embedded-opentype"),
+    url("https://archive.org/includes/fonts/Iconochive-Regular.woff?-ccsheb")
+    format("woff"),
+    url("https://archive.org/includes/fonts/Iconochive-Regular.ttf?-ccsheb")
+    format("truetype"),
+    url("https://archive.org/includes/fonts/Iconochive-Regular.svg?-ccsheb#Iconochive-Regular")
+    format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,21 +33,22 @@ header {
 }
 
 header nav {
+  transition: all 1s;
   width: 85%;
   height: 50px;
   margin: 100px auto 50px auto;
   display: flex;
   justify-content: space-between;
   border-radius: 4px;
-  box-shadow: 0 0 4px black;
-  background: rgb(210, 210, 242);
+  box-shadow: 0 0 10px rgba(35, 40, 49, 1) inset;
+  background: rgb(137, 137, 162);
   background:
     linear-gradient(
       0deg,
-      rgba(210, 210, 242, 1) 0%,
-      rgba(221, 210, 184, 1) 51%,
-      rgba(171, 153, 144, 1) 57%,
-      rgba(124, 94, 94, 1) 100%
+      rgba(137, 137, 162, 1) 0%,
+      rgba(55, 60, 69, 1) 46%,
+      rgba(195, 196, 221, 1) 50%,
+      rgba(163, 171, 221, 1) 100%
     );
 }
 
@@ -47,54 +64,46 @@ nav .vl {
   padding-left: 0;
 }
 
-header nav div {
-  width: 100%;
-}
-
-header nav > div:hover {
-  background: rgb(210, 210, 242);
-  background:
-    linear-gradient(
-      0deg,
-      rgba(170, 170, 202, 1) 0%,
-      rgba(181, 170, 144, 1) 51%,
-      rgba(131, 103, 104, 1) 57%,
-      rgba(84, 54, 54, 1) 100%
-    );
-  color: white;
-}
-
 header nav button,
 .search-icon-container {
   width: 100%;
   border-radius: 0;
   border: none;
+  color: white;
   background-color: white;
   background-color: rgba(0, 0, 0, 0);
 }
 
 header nav button:hover {
   background: rgb(210, 210, 242);
+  background: rgb(137, 137, 162);
   background:
     linear-gradient(
       0deg,
-      rgba(170, 170, 202, 1) 0%,
-      rgba(181, 170, 144, 1) 51%,
-      rgba(131, 103, 104, 1) 57%,
-      rgba(84, 54, 54, 1) 100%
+      rgba(87, 87, 102, 1) 0%,
+      rgba(5, 10, 19, 1) 46%,
+      rgba(145, 146, 171, 1) 50%,
+      rgba(113, 121, 171, 1) 100%
     );
   color: white;
 }
 
-.footer-elements-container span,
-a,
+footer a {
+  color: #08c;
+  text-decoration: none;
+}
+
+.footer-elements-container a,
 img {
   margin: 10px auto;
 }
 
+.footer-elements-container span {
+  margin-left: 6.8%;
+}
+
 aside img {
-  height: 200px;
-  width: 364px;
+  width: 100%;
 }
 
 nav button img:hover {
@@ -103,6 +112,18 @@ nav button img:hover {
 
 header nav .first-button {
   border-radius: 4px 0 0 4px;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg");
+  background-position: center;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  transition: all 0.1s;
+}
+
+header nav .first-button:hover {
+  filter: invert();
+  transition: all 0.3s;
 }
 
 header nav .search-icon-container {
@@ -121,16 +142,7 @@ header nav .search-icon-container .input-container {
   box-shadow: 0 2px 1px rgb(56, 56, 56) inset;
 }
 
-div .img {
-  width: 100%;
-  height: 100%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg");
-  background-position: center;
-  background-size: 20%;
-  background-repeat: no-repeat;
-}
-
-div .img:hover {
+button .img:hover {
   filter: invert(100%);
 }
 
@@ -160,27 +172,32 @@ header .main-text {
   text-align: center;
   font-family: BioRhyme, cursive;
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+header .main-text:hover {
+  background-color: rgba(36, 36, 36, 0.4);
+  transition: 0.3s;
 }
 
 header .main-text .first-line {
   font-size: 36px;
   font-style: italic;
   font-weight: 0;
-  font-family: Iconochive, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin-bottom: 20px;
 }
 
 header .main-text .second-line {
   font-size: 40px;
   font-weight: 400;
-  font-family: Iconochive, monospace;
+  font-family: 'Quicksand', sans-serif;
   margin-bottom: 20px;
 }
 
 header .main-text .third-line {
   font-size: 24px;
-  font-family: Iconochive, cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
 aside {
@@ -195,11 +212,6 @@ footer {
   font-size: 10px;
   display: block;
   color: #6e6e6e;
-}
-
-footer a {
-  color: #08c;
-  text-decoration: none;
 }
 
 footer .footer-top-elements {

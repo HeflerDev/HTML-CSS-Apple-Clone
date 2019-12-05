@@ -4,6 +4,8 @@ This project is meant to clone the Apple Webpage from 2014 --> https://web.archi
 
 The main objective of this project was to use background images and gradients. I did some minor changes to its visual because of personal tastes, but followed the idea and logic of the page.
 
+!["https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg"]()
+
 ##Built With
 
 Html Css
